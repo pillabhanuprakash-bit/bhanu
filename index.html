@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Infosys Job Registration – Resume Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f6fc;
+        }
+        .container {
+            width: 700px;
+            margin: auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #0051a3;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+        textarea {
+            resize: vertical;
+        }
+        .btn {
+            margin-top: 20px;
+            background-color: #0051a3;
+            color: white;
+            padding: 10px;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background-color: #003d80;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Infosys Job Registration – UG Resume Form</h2>
+
+    <form>
+        <!-- Personal Details -->
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your full name" required>
+
+        <label>Email ID</label>
+        <input type="email" placeholder="Enter your email" required>
+
+        <label>Mobile Number</label>
+        <input type="tel" placeholder="Enter mobile number" required>
+
+        <label>Date of Birth</label>
+        <input type="date" required>
+
+        <label>Gender</label>
+        <select required>
+            <option value="">Select</option>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+        </select>
+
+        <!-- Education Details -->
+        <label>UG Degree</label>
+        <input type="text" placeholder="B.Tech / B.Sc / BCA etc" required>
+
+        <label>Branch / Stream</label>
+        <input type="text" placeholder="Computer Science / IT etc" required>
+
+        <label>University / College Name</label>
+        <input type="text" required>
+
+        <label>Year of Graduation</label>
+        <input type="number" placeholder="2025" required>
+
+        <label>CGPA / Percentage</label>
+        <input type="text" required>
+
+        <!-- Skills -->
+        <label>Technical Skills</label>
+        <textarea placeholder="Eg: C, Java, Python, HTML, CSS"></textarea>
+
+        <!-- Projects -->
+        <label>Academic Projects</label>
+        <textarea placeholder="Project title and description"></textarea>
+
+        <!-- Internship -->
+        <label>Internship / Experience (if any)</label>
+        <textarea placeholder="Company name and role"></textarea>
+
+        <!-- Resume Upload -->
+        <label>Upload Resume (PDF)</label>
+        <input type="file" accept=".pdf" required>
+
+        <!-- Declaration -->
+        <label>
+            <input type="checkbox" required>
+            I declare that all the information provided is true.
+        </label>
+
+        <button class="btn" type="submit">Submit Application</button>
+    </form>
+</div>
+
+</body>
+</html>
